@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Cancel Reservation</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color:seagreen">
+
+<div class="container">
+  <h2>Cancel your reservation... </h2><hr>
+    <p><b>Enter the following details</b></p>
+  <form>
+      <div class="form-group">
+      <label for="id">ID:</label>
+      <input type="text" class="form-control" id="id" placeholder="Enter ID from logs">
+    </div>
+   <div class="form-group">
+      <label for="usr">Name:</label>
+      <input type="text" class="form-control" id="usr" placeholder="Enter Full Name">
+    </div>
+
+    <div class="form-group">
+      <label for="usr">Phone Number:</label>
+      <input type="text" class="form-control" id="phn" placeholder="Enter Phone Number">
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+    </div><br>
+
+    <form action="/action_page.php">
+    <p> Dates for cancelling the reserved rooms :<p>
+  <label for="from">From: </label>
+  <input type="date" id="from" name="date">   <label for="to">To:</label> <input type="date" id="to" name="date">
+  </form><br>
+
+      <div class="form-group">
+      <label for="comment">Comments:</label>
+      <textarea class="form-control" rows="5" id="comment"></textarea>
+    </div>
+    <p><b>* If you wish to make any changes in the reservation <br>
+    1) Firstly Cancel the reservation "Home>Top Navigation Bar >Cancel Reservation>Fill the form"<br>
+        2) Make a fresh reservation "Home>Top Navigation Bar >Make Reservation>Fill the form"</b> <p>
+      <br>
+    <p>Cancel within 1 hour to avoid 20% cancellation fee<p>
+    <div class="checkbox">
+      <label><input type="checkbox" name="Confirm">I confirm to cancel the reservation and understand the cancellation fee policy</label>
+    </div>
+      <div>
+    <button type="submit" class="btn btn-default">DELETE</button>
+    </div>
+    <br>
+
+    <div class="mt-5 p-5 bg-dark text-white text-center">
+  <h1 style="font-size:100%"> Enjoy your stay! </h1>
+  <p style="font-size:75%">For any queries contact us at +91 9999955555, +91 9876543021 <br>
+  or mail us at queriesreservation@abc.com </p>
+    </div>
+
+</form>
+
+</div>
+</body>
+</html>

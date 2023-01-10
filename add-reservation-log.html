@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <title>Reservation App</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    </head>
+
+
+
+  <body style="background-color:seagreen">
+  <div class="container">
+  <h2>Welcome! Make your hassle-free reservation today... :)</h2><hr>
+
+
+
+    <div class="container mt-3">
+      <h2>Enter the following details</h2>
+      <form action="/save" method="post">
+          <div class="mb-3 mt-3">
+          <label>Name:</label>
+          <input type="text" class="form-control" id="name" placeholder="Enter Full Name" name="name">
+        </div>
+        <div class="mb-3 mt-3">
+          <label>Phone:</label>
+          <input type="text" class="form-control" id="phone" placeholder="Enter Phone Number" name="txtPhone">
+        </div>
+        <div class="mb-3">
+          <label>Email:</label>
+          <input type="text" class="form-control" id="email" placeholder="Enter email " name="email">
+        </div>
+        <div class="mb-3 mt-3">
+          <label>Address:</label>
+          <input type="text" class="form-control" id="address" placeholder="Enter Address" name="address">
+        </div>
+
+
+     <p> Dates for booking the rooms :</p>
+     <label for="date">From: </label>
+     <input type="date" id="date" name="date_from">
+              <label for="date">To:</label> <input type="date" id="to" name="date_to">
+         <br>
+         <br>
+        <div class="form-group">
+      <label for="sel1">Number of rooms </label>
+      <select class="form-control" id="sel2" name="room_num">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+     </div>
+
+        <div class="form-group">
+      <label for="sel1">Type of Rooms</label>
+       <select class="form-control" id="sel3" name="room_type">
+        <option>Primary </option>
+        <option>Kids </option>
+        <option>Deluxe</option>
+        <option>Super Deluxe </option>
+        <option>Full Cottage</option>
+       </select><br>
+     </div>
+
+     <div class="form-group">
+       <label for="sel1">Include Meals</label>
+       <select class="form-control" id="sel1" name="meals">
+        <option>Yes (breakfast,lunch,evening snacks,dinner) </option>
+        <option>NO</option>
+        <option>Any 2</option>
+       </select></div>
+
+          <div class="form-group">
+      <label for="comment">Comments:</label>
+      <textarea class="form-control" rows="5" id="comment" name="comments"></textarea>
+    </div>
+
+    <p><b>* If you wish to cancel the reservation "Home>Top Navigation Bar >Cancel Reservation>Fill the form"</b><p>
+    <p>Cancel within 1 hour to avoid 20% cancellation fee<p>
+
+      <br>
+        <button type="submit" class="btn btn-primary">SUBMIT</button>
+
+   <div class="mt-5 p-5 bg-dark text-white text-center">
+      <h1 style="font-size:100%"> Enjoy your stay! </h1>
+      <p style="font-size:75%">For any queries contact us at +91 9999955555, +91 9876543021 <br>
+      or mail us at queriesreservation@abc.com </p>
+     </div>
+
+      </form>
+    </div>
+
+    </body>
+</html>
